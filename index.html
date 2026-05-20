@@ -714,11 +714,11 @@ nav a:hover::after{transform:scaleX(1)}
           </div>
         </div>
       </div>
-      <div class="bk-form-wrap reveal">
-        <form class="bk-form" id="bkForm" onsubmit="submitBooking(event)">
+      <div class="bk-form-wrap reveal"><form class="bk-form" action="https://formsubmit.co/elebenezer07@gmail.com" method="POST"></form>
+        
           <h3>Make a Reservation</h3>
           <div class="frow">
-            <div class="fg"><label>Your Name</label><input type="text" placeholder="e.g. Ahmed Ali" required/></div>
+            <div class="fg"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Ahmed Ali" required/></div>
             <div class="fg"><label>Phone Number</label><input type="tel" placeholder="Mobile number" required/></div>
           </div>
           <div class="frow">
@@ -832,12 +832,7 @@ const obs = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
 // ─ Booking form
-function submitBooking(e) {
-  e.preventDefault();
-  document.getElementById('bkForm').style.display = 'none';
-  const s = document.getElementById('bkSuccess');
-  s.style.display = 'flex';
-}
+
 </script>
 </body>
 </html>
